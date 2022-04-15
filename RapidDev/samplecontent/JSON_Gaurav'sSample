@@ -1,0 +1,576 @@
+{
+  "items": {
+    "enumtypes": {
+      "enumtype": [
+        {
+          "value": [
+            {
+              "_code": "testValue1"
+            },
+            {
+              "_code": "testValue2"
+            },
+            {
+              "_code": "testValue3"
+            },
+            {
+              "_code": "testValue4"
+            }
+          ],
+          "_code": "TestEnum"
+        },
+        {
+          "_code": "EncodingEnum",
+          "_autocreate": "true",
+          "_generate": "true",
+          "_dynamic": "true"
+        },
+        {
+          "value": [
+            {
+              "_code": "amex"
+            },
+            {
+              "_code": "visa"
+            },
+            {
+              "_code": "master"
+            },
+            {
+              "_code": "diners"
+            }
+          ],
+          "_code": "CreditCardType",
+          "_autocreate": "true",
+          "_generate": "true"
+        },
+        {
+          "value": [
+            {
+              "_code": "CREATED"
+            },
+            {
+              "_code": "ON_VALIDATION"
+            },
+            {
+              "_code": "COMPLETED"
+            },
+            {
+              "_code": "CANCELLED"
+            }
+          ],
+          "_code": "OrderStatus",
+          "_autocreate": "true",
+          "_generate": "true",
+          "_dynamic": "true"
+        }
+      ]
+    },
+    "relations": [
+      {
+        "relationAttr": [
+          {
+            "name": "sourceRead",
+            "value": "true"
+          },
+          {
+            "name": "sourceWrite",
+            "value": "true"
+          },
+          {
+            "name": "sourceSearch",
+            "value": "true"
+          },
+          {
+            "name": "sourceOptional",
+            "value": "true"
+          },
+          {
+            "name": "sourceType",
+            "value": "Customer"
+          },
+          {
+            "name": "sourceQualifier",
+            "value": "customer"
+          },
+          {
+            "name": "sourceCardinality",
+            "value": "one"
+          },
+          {
+            "name": "sourceCollectiontype",
+            "value": "list"
+          },
+          {
+            "name": "sourceOrdered",
+            "value": "true"
+          },
+          {
+            "name": "targetRead",
+            "value": "true"
+          },
+          {
+            "name": "targetWrite",
+            "value": "true"
+          },
+          {
+            "name": "targetSearch",
+            "value": "true"
+          },
+          {
+            "name": "targetType",
+            "value": "Appointment1"
+          },
+          {
+            "name": "targetOptional",
+            "value": "true"
+          },
+          {
+            "name": "targetPartof",
+            "value": "true"
+          },
+          {
+            "name": "targetQualifier",
+            "value": "Appontment1"
+          },
+          {
+            "name": "targetCardinality",
+            "value": "many"
+          },
+          {
+            "name": "targetCollectiontype",
+            "value": "true"
+          },
+          {
+            "name": "targetOrdered",
+            "value": "true"
+          },
+          {
+            "name": "code",
+            "value": "cust2ApptmntRel1"
+          },
+          {
+            "name": "localized",
+            "value": "true"
+          },
+          {
+            "name": "generate",
+            "value": "true"
+          },
+          {
+            "name": "autocreate",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "relationAttr": [
+          {
+            "name": "sourceRead",
+            "value": "true"
+          },
+          {
+            "name": "sourceWrite",
+            "value": "true"
+          },
+          {
+            "name": "sourceSearch",
+            "value": "true"
+          },
+          {
+            "name": "sourceOptional",
+            "value": "true"
+          },
+          {
+            "name": "sourceType",
+            "value": "Customer"
+          },
+          {
+            "name": "sourceQualifier",
+            "value": "customer"
+          },
+          {
+            "name": "sourceCardinality",
+            "value": "one"
+          },
+          {
+            "name": "sourceCollectiontype",
+            "value": "list"
+          },
+          {
+            "name": "sourceOrdered",
+            "value": "true"
+          },
+          {
+            "name": "targetRead",
+            "value": "true"
+          },
+          {
+            "name": "targetWrite",
+            "value": "true"
+          },
+          {
+            "name": "targetSearch",
+            "value": "true"
+          },
+          {
+            "name": "targetType",
+            "value": "Appointment"
+          },
+          {
+            "name": "targetOptional",
+            "value": "true"
+          },
+          {
+            "name": "targetPartof",
+            "value": "true"
+          },
+          {
+            "name": "targetQualifier",
+            "value": "Appontment"
+          },
+          {
+            "name": "targetCardinality",
+            "value": "many"
+          },
+          {
+            "name": "targetCollectiontype",
+            "value": "true"
+          },
+          {
+            "name": "targetOrdered",
+            "value": "true"
+          },
+          {
+            "name": "code",
+            "value": "cust2ApptmntRel"
+          },
+          {
+            "name": "localized",
+            "value": "true"
+          },
+          {
+            "name": "generate",
+            "value": "true"
+          },
+          {
+            "name": "autocreate",
+            "value": "true"
+          }
+        ]
+      }
+    ],
+    "Type": [
+      {
+        "header": [
+          {
+            "name": "code",
+            "value": "appointment"
+          },
+          {
+            "name": "jaloClass",
+            "value": "com.sap.crd.core.jalo.appointment"
+          },
+          {
+            "name": "deployment",
+            "value": "appointments"
+          },
+          {
+            "name": "typecode",
+            "value": "36000"
+          },
+          {
+            "name": "description",
+            "value": "this is to handle appointment for the b2c cusomer"
+          }
+        ]
+      },
+      {
+        "attributes": [
+          {
+            "attributeRow": [
+              {
+                "name": "qualifier",
+                "value": "id"
+              },
+              {
+                "name": "dataTypeSelect",
+                "value": "Integer"
+              },
+              {
+                "name": "propertyOrJalo",
+                "value": "persistence"
+              },
+              {
+                "name": "autocreate",
+                "value": "on"
+              },
+              {
+                "name": "generate",
+                "value": "on"
+              },
+              {
+                "name": "read",
+                "value": "on"
+              },
+              {
+                "name": "write",
+                "value": "on"
+              },
+              {
+                "name": "search",
+                "value": "on"
+              },
+              {
+                "name": "optional",
+                "value": "on"
+              },
+              {
+                "name": "uiName",
+                "value": "Appointment Id"
+              },
+              {
+                "name": "validations",
+                "value": "numeric"
+              }
+            ]
+          },
+          {
+            "attributeRow": [
+              {
+                "name": "qualifier",
+                "value": "purpose"
+              },
+              {
+                "name": "dataTypeSelect",
+                "value": "String"
+              },
+              {
+                "name": "propertyOrJalo",
+                "value": "persistence"
+              },
+              {
+                "name": "autocreate",
+                "value": "on"
+              },
+              {
+                "name": "generate",
+                "value": "on"
+              },
+              {
+                "name": "read",
+                "value": "on"
+              },
+              {
+                "name": "write",
+                "value": "on"
+              },
+              {
+                "name": "search",
+                "value": "on"
+              },
+              {
+                "name": "optional",
+                "value": "on"
+              },
+              {
+                "name": "uiNamed",
+                "value": "purpose"
+              },
+              {
+                "name": "validations",
+                "value": "mandatory"
+              }
+            ]
+          },
+          {
+            "attributeRow": [
+              {
+                "name": "qualifier",
+                "value": "Preferred_date"
+              },
+              {
+                "name": "dataTypeSelect",
+                "value": "Product"
+              },
+              {
+                "name": "propertyOrJalo",
+                "value": "persistence"
+              },
+              {
+                "name": "autocreate",
+                "value": "on"
+              },
+              {
+                "name": "generate",
+                "value": "on"
+              },
+              {
+                "name": "read",
+                "value": "on"
+              },
+              {
+                "name": "write",
+                "value": "on"
+              },
+              {
+                "name": "search",
+                "value": "on"
+              },
+              {
+                "name": "optional",
+                "value": "on"
+              },
+              {
+                "name": "uiNamed",
+                "value": "date"
+              },
+              {
+                "name": "validations",
+                "value": "mandatory"
+              }
+            ]
+          },
+          {
+            "attributeRow": [
+              {
+                "name": "qualifier",
+                "value": "prerequisites"
+              },
+              {
+                "name": "dataTypeSelect",
+                "value": "String"
+              },
+              {
+                "name": "propertyOrJalo",
+                "value": "persistence"
+              },
+              {
+                "name": "autocreate",
+                "value": "on"
+              },
+              {
+                "name": "generate",
+                "value": "on"
+              },
+              {
+                "name": "read",
+                "value": "on"
+              },
+              {
+                "name": "write",
+                "value": "on"
+              },
+              {
+                "name": "search",
+                "value": "on"
+              },
+              {
+                "name": "optional",
+                "value": "on"
+              },
+              {
+                "name": "uiNamed",
+                "value": "Preparation for Appointment"
+              },
+              {
+                "name": "validations",
+                "value": "alphanumeric"
+              }
+            ]
+          },
+          {
+            "attributeRow": [
+              {
+                "name": "qualifier",
+                "value": "Venue"
+              },
+              {
+                "name": "dataTypeSelect",
+                "value": "String"
+              },
+              {
+                "name": "propertyOrJalo",
+                "value": "persistence"
+              },
+              {
+                "name": "autocreate",
+                "value": "on"
+              },
+              {
+                "name": "generate",
+                "value": "on"
+              },
+              {
+                "name": "read",
+                "value": "on"
+              },
+              {
+                "name": "search",
+                "value": "on"
+              },
+              {
+                "name": "optional",
+                "value": "on"
+              },
+              {
+                "name": "uiNamed",
+                "value": "Venue"
+              },
+              {
+                "name": "validations",
+                "value": "mandatory"
+              }
+            ]
+          },
+          {
+            "attributeRow": [
+              {
+                "name": "qualifier",
+                "value": "product_description"
+              },
+              {
+                "name": "dataTypeSelect",
+                "value": "String"
+              },
+              {
+                "name": "propertyOrJalo",
+                "value": "persistence"
+              },
+              {
+                "name": "autocreate",
+                "value": "on"
+              },
+              {
+                "name": "generate",
+                "value": "on"
+              },
+              {
+                "name": "read",
+                "value": "on"
+              },
+              {
+                "name": "search",
+                "value": "on"
+              },
+              {
+                "name": "optional",
+                "value": "on"
+              },
+              {
+                "name": "uiNamed",
+                "value": "impact Product"
+              },
+              {
+                "name": "validations",
+                "value": "mandatory"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "_xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "_xsi:noNamespaceSchemaLocation": "items.xsd"
+  }
+}
